@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Noto Sans", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .hero {
@@ -66,6 +67,7 @@ body {
   text-transform: uppercase;
   opacity: 0;
   animation: fade-in 0.75s 1.5s linear forwards;
+  word-wrap: break-word;
 }
 .hero__cnt svg {
   height: 12vw;
@@ -144,4 +146,79 @@ body {
   background: #72646e14;;
   color: white;
 }
+
+
+.content{
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  
+}
+body:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width:30%;
+  text-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
 
